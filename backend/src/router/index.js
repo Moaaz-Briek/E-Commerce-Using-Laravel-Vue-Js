@@ -1,12 +1,23 @@
-import {createStore} from "vuex";
+import { createRouter } from 'vue-router'
+import {createWebHistory} from 'vue-router'
+import Dashboard from '../views/Dashboard.vue'
+import Login from '../views/Login.vue'
 
-const store = createStore({
-   state: {
-       test: '1234'
-   },
-   getters: {},
-   actions: {},
-   mutations: {},
-});
+const routes = [
+    {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: Dashboard
+    },
+    {
+        path: '/login',
+        name: 'login',
+        component: Login
+    }
+];
+const router = createRouter ({
+    history: createWebHistory(),
+    routes
+})
 
-export default store
+export default router;

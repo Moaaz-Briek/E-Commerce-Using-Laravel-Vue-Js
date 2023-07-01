@@ -1,10 +1,12 @@
-import { createRouter } from 'vue-router'
-import {createWebHistory} from 'vue-router'
+import {createStore} from "vuex";
 
-const routes = [];
-const router = createRouter ({
-    history: createWebHistory(),
-    routes
-})
+const store = createStore({
+    state: {
+        test: '1234'
+    },
+    getters: {},
+    actions: {},
+    mutations: {},
+});
 
-export default router;
+export default store
