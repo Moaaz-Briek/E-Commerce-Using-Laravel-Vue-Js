@@ -7,13 +7,13 @@ npm create vite@latest
 => npm install
 => npm run dev
 =====================
-Now Install Tailwind 
+Now Install Tailwind https://tailwindcss.com/docs/guides/vite#vue
 --------------------
 Go to backend folder
 => npm install -D tailwindcss postcss autoprefixer
 => npx tailwindcss init -p
 
-Go to tailwindcss vite website and follow instructions
+Go to tailwindcss vite website and follow instructions 
 => tailwind.config.js
 => src/index.css
 => main.js
